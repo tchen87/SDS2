@@ -1,23 +1,73 @@
 SDS_Func_Req_Render_DICOM,The Application will render the DICOM image data as left and right images comprising a stereoscopic 3D image frame.
-SDS_Func_Req_Render_Time,The Application will display time sequential left right images comprising a stereoscopic 3D image. 
-SDS_Func_Req_Render_Max_Res,The Application will display stereoscopic 3D image frames at the maximum available resolution of the application window. 
-SDS_Func_Req_Render_Flicker,"The Application will display stereoscopic 3D images with no ""flicker"". "
+SDS_Func_Req_Render_Time,The Application will display time sequential left right images comprising a stereoscopic 3D image.
+SDS_Func_Req_Render_Max_Res,"The Application will display stereoscopic 3D image frames at the maximum available resolution of the application window.
+The Application will display stereoscopic 3D image frames at the maximum available area of the application window."
+SDS_Stereo_Func_Req_Render_3840x1080,"The Application will display stereoscopic 3D images with no ""flicker""."
 SDS_Func_Req_Render_Aligned,The Application will display the DICOM image data as stereoscopic 3D image frames aligned to the HCP head position and orientation.
-SDS_Func_Req_Render_Toggle_Eye,The Application will allow the HCP to toggle the stereoscopic frame eye sequence between left-right and right-left. 
-SDS_Func_Req_Render_Ray,"The Application will display a line (In subsequent requirements referred to as ""ray"") from the position of the front tip of the stylus and along its orientation. "
-SDS_Func_Req_Render_Interaction_Length,"The Application will display the ray with a predetermined line length for interaction ""interaction length"" in the True 3D and intuitive 2D visualization modes, the forward point of the ray is the ""ray tip"". "
-SDS_Func_Req_Render_Ray_Length,The interaction length of the ray will be 0.125 meters. The ray will end 0.125 meters in front of the stylus tip. 
-SDS_Func_Req_Render_Measurement_Ray_Length,The measurement length of the ray will be between 0.02 meters and 0.125 meters. 
-SDS_Func_Req_Render_Maximum,The application will display images to the maximum available image area.
-SDS_Func_Req_Render_Display_Ray_Desk,The Application will have the capability to display the ray and the desk (grid displayed to help visualize a horizontal plane) at all times. 
-SDS_Func_Req_Render_Visualize_Modes,"The Application will display the DICOM image data in visualization modes True 3D (t3D), Intuitive 2D (i2D), Slab, and annotation."
-SDS_Func_Req_Render_Font_Size,The Application will display 11pt font size text or larger within the 3D space - PostScript (current DTP).
-SDS_Func_Req_Render_Minimize,The Application will provide the ability for the HCP to minimze the window to the Windows Task Bar.
-SDS_Func_Req_Render_Exit,The Application will provide the ability for the HCP to finalize the current application session and close the application
-SDS_Func_Req_Dual_Monitor_Display,The Application will allow the HCP to duplicate the display onto a second stereo monitor which accepts Time Sequentional Stereo Format.
-SDS_Func_Req_Extended_Display_2K,The Application will provide the ability to render onto a second monitor which has a 2k resolution (1920x1080) when the display is extended.
-SDS_Func_Req_Extended_Display_4K,The Application will provide the ability to render onto a second monitor which has a 4k resolution (3840x2160) when the display is extended.
-SDS_Func_Req_Extended_OnOff,The Application will provide the ability to turn on or off the application's display on an extended second monitor
-SDS_Func_Req_Extended_Display_NonStereo,The application will provide the ability for non stereo rendering when display is extended to a second monitor.
-SDS_Func_Req_Display_Angle,The Application will allow the HCP to adjust the screen angle prior to starting the application.
-SDS_Func_Req_Render_EyeSeparation,The eye separation for stereo calculations can be adjusted between 0.05 meters and 0.08 meters. 
+SDS_Func_Req_Render_Toggle_Eye,The Application will allow the HCP to toggle the stereoscopic frame eye sequence between left-right and right-left.
+SDS_Func_Req_Render_Ray,"The Application will display a line (In subsequent requirements referred to as ""ray"") from the position of the front tip of the ray and along its orientation.
+"
+SDS_Func_Req_Render_Interaction_Length,"The Application will display the ray with a predetermined line length for interaction ""interaction length"" in the True 3D and intuitive 2D visualization modes, the forward point of the ray is the ""ray tip"".
+"
+SDS_Func_Req_Render_Ray_Length,"The length of the interation tool ray will be set by the user.
+"
+SDS_Func_Req_Render_Maximum,"The application will display images to the maximum available image area.
+"
+SDS_Func_Req_Render_Display_Ray_Desk,"The Application will have the capability to display the ray and the desk (grid displayed to help visualize a horizontal plane) at all times.
+The Application will have the capability to display the ray and a reference grid (grid pattern that appears to be perpendicular to the user)."
+SDS_Func_Req_Render_Visualize_Modes,"The Application will display the DICOM image data in visualization modes True 3D (t3D), Intuitive 2D (i2D), Slab, and annotation.
+"
+SDS_Func_Req_Render_Font_Size,"The Application will display 11pt font size text or larger within the 3D space - PostScript (current DTP).
+The Application will display 11pt font size text or larger within the 3D space
+"
+SDS_Func_Req_Render_Minimize,"The Application will provide the ability for the HCP to minimze the window to the Windows Task Bar.
+"
+SDS_Func_Req_Render_Exit,"The Application will provide the ability for the HCP to finalize the current application session and close the application
+"
+SDS_Func_Req_Dual_Monitor_Display,"The Application will allow the HCP to duplicate the display onto a second stereo monitor which accepts Time Sequentional Stereo Format.
+"
+SDS_Func_Req_Extended_Display_2K,"The Application will provide the ability to render onto a second monitor which has a 2k resolution (1920x1080) when the display is extended.
+"
+SDS_Func_Req_Extended_Display_4K,"The Application will provide the ability to render onto a second monitor which has a 4k resolution (3840x2160) when the display is extended.
+"
+SDS_Func_Req_Extended_OnOff,"The Application will provide the ability to turn on or off the application's display on an extended second monitor
+"
+SDS_Func_Req_Extended_Display_NonStereo,"The application will provide the ability for non stereo rendering when display is extended to a second monitor.
+"
+SDS_Func_Req_Duplicated_Display_2K_Stereo,"When connected to a zSpace (Zvr) display as the Primary display AND
+A 2nd Stereo 2k display, with Time Sequential 3D Format capability is connected via a DUPLICATE Windows configuration
+
+Then the True 3D image data can be replicated to the 2nd display and be viewable stereoscopically.
+"
+SDS_Func_Req_Extended_Display_2K_Stereo,"When connected to a zSpace (Zvr) display as the Primary display AND
+A 2nd Stereo 2k display, with Time Sequential 3D Format capability is connected via a EXTENDED Windows configuration
+
+Then the True 3D image data can be replicated to the 2nd display and be viewable stereoscopically.
+"
+SDS_Func_Req_Extended_Display_2K_Stereo_Arrange,"When connected to a zSpace (Zvr) display as the Primary display AND
+A 2nd Stereo 2k display, with Time Sequential 3D Format capability is connected via a EXTENDED Windows configuration AND
+The Display Settings position of the 2nd display, relative to the primary display is in any position to the Right, Left, Above or Below :
+
+Then the True 3D image data can be replicated to the 2nd display and be viewable stereoscopically.
+"
+SDS_Func_Req_Extended_Display_2K_NonStereo,"When connected to a zSpace (Zvr) display as the Primary display AND
+A 2nd Non-Stereo 2k display is connected via a EXTENDED Windows configuration
+
+Then the True 3D image data can be replicated to the 2nd display and be viewable non-stereoscopically.
+"
+SDS_Fun_Req_SecondDisplayFormat,"When connected to a zSpace (Zvr) display as the Primary display AND
+A 2nd 2k display is connected via a EXTENDED Windows configuration
+
+Then the application will provide a mechanism to select Non-Stereo or Time Sequential Format.
+"
+SDS_Func_Req_Extended_OnOff,"When connected to a zSpace (Zvr) display as the Primary display AND
+A 2nd 2k display is connected via a EXTENDED Windows configuration
+
+Then the application will provide a mechanism to disable the True 3D application from using the 2nd display.
+"
+SDS_Func_Req_Display_Angle,"The Application will allow the HCP to adjust the screen angle prior to starting the application.
+When the main display is a zSpace or HP Zvr display, the angle of the display shall be read at application start-up and used to adjust the displayed 3D volume projection.
+"
+SDS_Func_Req_Render_EyeSeparation,"The eye separation for stereo calculations can be adjusted between 0.05 meters and 0.08 meters.
+"
+SDS_Stereo_Func_Req_Render_3840x1080,The application will be able to display stereopic 3D in Side by Side format on when connected to a 2K display and a display with dimensions 3840x1080 (ie. the dimenco Display).
